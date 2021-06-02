@@ -7,14 +7,14 @@
 	<author>Zoe Slattery</author>
 	<authorEmail>zoe.slattery@gmail.com</authorEmail>
 	<copyright>Copyright Zoe Slattery</copyright>
-	<license>GPL</license>
+	<license>GPL 3</license>
 	<!--  The version string is recorded in the components table -->
-	<version>0.0.1</version>
+	<version>0.0.3</version>
 	<!-- The description is optional and defaults to the name -->
 	<description>This component maintains a library of photographs and associated meta data. The meta data 
 	can be searched to return a list of photgraphs that meet specific criteria.</description>
 
-	<update> <!-- Runs on update; New since J2.5 -->
+	<update> <!-- Runs on update -->
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
 		</schemas>
@@ -26,12 +26,14 @@
 		in this section are copied from /site/ in the package -->
 	<files folder="site">
 		<filename>index.html</filename>
-		<filename>photoArchive.php</filename>
+		<filename>photoarchive.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
 	</files>
 
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu link='index.php?option=com_helloworld'>Photo Archive</menu>
+		<menu link='index.php?option=com_photoarchive'>Photo Archive</menu>
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
 			to copy FROM in the package to install therefore files copied
@@ -39,7 +41,7 @@
 		<files folder="admin">
 			<!-- Admin Main File Copy Section -->
 			<filename>index.html</filename>
-			<filename>photoArchive.php</filename>
+			<filename>photoarchive.php</filename>
 			<!-- SQL files section -->
 			<folder>sql</folder>
 		</files>

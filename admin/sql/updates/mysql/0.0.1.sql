@@ -1,0 +1,3 @@
+--
+-- This file will contain the table structure for `"__photoarchive"`
+--
